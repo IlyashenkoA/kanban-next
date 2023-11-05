@@ -1,0 +1,43 @@
+@tailwind components;
+
+@layer components {
+  /* Checkbox */
+  .checkmark-container:has(input:checked) ~ .checkbox-label {
+    @apply text-black/50 dark:text-white/50 line-through;
+  }
+
+  .checkmark-container:has(input:checked) {
+    @apply bg-main-purple border-main-purple;
+  }
+
+  /* Dropdown */
+  .dropdown-container:has(.dropdown-list) > .dropdown-toggle {
+    @apply border-main-purple;
+  }
+
+  /* Theme switcher */
+  .theme-switcher input[type='checkbox']:checked ~ span {
+    @apply translate-x-[1.45rem];
+  }
+
+  /* Set sidebar width to 0, when hidden */
+  .sidebar.hide {
+    @apply translate-x-[-25rem] w-0;
+
+    transition:
+      transform 0.4s,
+      width 0.6s;
+  }
+
+  /* Set red border for Input wrapper if error */
+  .textfield-container:has(.textfield-error) {
+    @apply border-red;
+  }
+
+  /* Limit the height for modal, when device height is smaller than modal height */
+  .board-modal > *,
+  .task-modal > * {
+    max-height: calc(100% - 6rem);
+    overflow-y: auto;
+  }
+}

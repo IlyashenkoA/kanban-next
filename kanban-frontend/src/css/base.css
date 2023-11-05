@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply min-w-[375px] min-h-screen;
+  }
+
+  body {
+    @apply font-Plus-Jakarta-Sans min-h-screen bg-light-bg dark:bg-dark-bg;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 6px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    background-color: #635fc7;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+  /* Remove background from modal, when Loader is visible */
+  #root:has(.loader-wrapper) > .modal {
+    @apply bg-transparent;
+  }
+}
