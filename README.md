@@ -74,26 +74,34 @@ git clone https://github.com/IlyashenkoA/kanban-next.git
 NEXT_PUBLIC_SERVER_URL
 ```
 
-1. Add a MongoDB URL in the .env file for the backend
+2. Add a MongoDB URL in the .env file for the backend
 
 ```
 MONGODB_URL
 ```
 
-5. Install all packages
+3. Add a Secret key for the JWT in the .env file for the backend
+
+```
+SECRET_KEY
+```
+
+4. Install all packages
 
 ```
 npm install
 ```
 
-6. Run the frontend project
+5. Run the frontend project
 
 ```
+cd kanban-frontend
 npm run dev
 ```
 
-7. Run the backend project
+6. Run the backend project
 
 ```
+cd kanban-backend
 npm start
 ```
