@@ -135,7 +135,7 @@ function App() {
                     </svg>
                   </button>
                 )}
-                {currentBoard.columns.length > 0 ? (
+                {currentBoard?.columns.length > 0 ? (
                   currentBoard.columns.map((item: IColumn) => {
                     return (
                       <Column
@@ -162,7 +162,7 @@ function App() {
                     </div>
                   </div>
                 )}
-                {currentBoard.columns.length > 0 ? (
+                {currentBoard?.columns.length > 0 ? (
                   <AddColumnButton key={Date.now()} />
                 ) : null}
               </section>

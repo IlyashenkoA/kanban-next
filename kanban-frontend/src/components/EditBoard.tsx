@@ -12,15 +12,15 @@ export const EditBoard = () => {
   const [toggleDeleteBoardModal, setToggleDeleteBoardModal] =
     useState<boolean>(false);
   const {
-    currentBoard: { name, _id },
+    currentBoard,
   } = useSelector((state: RootState) => state.KanbanReducer);
 
   return (
     <>
       {toggleDeleteBoardModal ? (
         <DeleteBoardModal
-          deleteItem={name}
-          deleteId={_id!}
+          deleteItem={currentBoard?.name}
+          deleteId={currentBoard?._id!}
           toggleModal={setToggleDeleteBoardModal}
         />
       ) : null}

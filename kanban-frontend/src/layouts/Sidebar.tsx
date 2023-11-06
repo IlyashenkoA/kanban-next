@@ -40,7 +40,7 @@ export const Sidebar: React.FC<{
                 const board = boards.filter(board => board._id === item._id);
                 dispatch(setActiveBoard(board[0]));
               }}
-              active={item._id === currentBoard._id}
+              active={item._id === currentBoard?._id}
             />
           </li>
         ))}

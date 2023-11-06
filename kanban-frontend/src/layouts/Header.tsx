@@ -60,7 +60,7 @@ export const Header: React.FC<{
                   </p>
                 </>
               }
-              disabled={currentBoard.columns.length > 0 ? false : true}
+              disabled={currentBoard?.columns.length > 0 ? false : true}
               onClick={() => setToggleAddTaskModal(true)}
             />
             <EditBoard />
