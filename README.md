@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/IlyashenkoA/kanban-frontend/">
+  <a href="https://github.com/IlyashenkoA/kanban-next/">
     <img src="https://i.ibb.co/7QVMWf8/Group-15.png" alt="Logo" />
   </a>
 
@@ -7,7 +7,7 @@
     Frontend Mentor challenge task - Kanban board
     <br/>
     <br/>
-    <a href="https://kanban-frontend-eta.vercel.app/">View Demo</a>
+    <a href="https://kanban-next-frontend.vercel.app">View Demo</a>
   </p>
 </p>
 
