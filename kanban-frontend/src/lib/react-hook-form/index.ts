@@ -1,4 +1,4 @@
-import { ISubtask } from '../../types/response';
+import { ISubtask } from '@/types/kanban';
 
 type ColumnFormValues = {
   _id?: string;

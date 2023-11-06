@@ -1,4 +1,4 @@
-import { IBoard } from '../../types/kanban';
+import { IBoard } from '@/types/kanban';
 import { ACTIONS } from './actions';
 
 export interface InitialState {
