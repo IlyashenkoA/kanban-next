@@ -40,7 +40,6 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-// Login route to redirect user if logged in
 router.get('/login', async (req, res) => {
   const authHeader = req.headers.authorization;
 
@@ -50,16 +49,21 @@ router.get('/login', async (req, res) => {
     if (tokenParts.length === 2 && tokenParts[0] === 'Bearer') {
       const token = tokenParts[1];
 
-      jwt.verify(token, process.env.SECRET_KEY, err => {
+      jwt.verify(token, process.env.SECRET_KEY, async (err) => {
         if (!err) {
           return res.status(200).json({ redirect: true });
+        } else {
+          return res.status(200).json({ redirect: false });
         }
       });
+    } else {
+      return res.status(200).json({ redirect: false });
     }
   } else {
     return res.status(200).json({ redirect: false });
   }
 });
+
 
 // User login route
 router.post('/login', async (req, res) => {
