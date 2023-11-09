@@ -23,7 +23,7 @@ export const Header: React.FC<{
   const handleLogOut = () => {
     localStorage.removeItem('token');
     router.push('/login');
-  }
+  };
 
   return (
     <>
