@@ -11,9 +11,9 @@ export const EditBoard = () => {
     useState<boolean>(false);
   const [toggleDeleteBoardModal, setToggleDeleteBoardModal] =
     useState<boolean>(false);
-  const {
-    currentBoard,
-  } = useSelector((state: RootState) => state.KanbanReducer);
+  const { currentBoard } = useSelector(
+    (state: RootState) => state.KanbanReducer
+  );
 
   return (
     <>
