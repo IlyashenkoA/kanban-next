@@ -82,9 +82,9 @@ export const AddBoardModal: React.FC<{
           onSubmit={handleSubmit(onSubmit)}
           onClick={e => e.stopPropagation()}
         >
-          <h1 className='text-l text-black dark:text-white pb-6'>
+          <h2 className='text-l text-black dark:text-white pb-6'>
             Add New Board
-          </h1>
+          </h2>
           <label
             htmlFor='boardName'
             className='block text-s text-black dark:text-white pb-2'

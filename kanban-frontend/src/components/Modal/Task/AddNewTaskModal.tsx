@@ -98,9 +98,9 @@ export const AddNewTaskModal: React.FC<{
           onSubmit={handleSubmit(onSubmit)}
           onClick={e => e.stopPropagation()}
         >
-          <h1 className='pb-6 font-bold text-black text-l dark:text-white'>
+          <h2 className='pb-6 font-bold text-black text-l dark:text-white'>
             Add New Task
-          </h1>
+          </h2>
           <div>
             <label className='block pb-2 font-bold text-black text-s dark:text-white'>
               Title

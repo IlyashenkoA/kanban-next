@@ -83,13 +83,13 @@ export const TaskModal: React.FC<{
           min-w-[345px] w-5/6 max-w-[30rem] mx-4 rounded-lg'
           onClick={e => e.stopPropagation()}
         >
-          <h1
+          <h2
             className='relative text-l text-black dark:text-white
           font-bold pb-6 inline-flex justify-between gap-x-6 w-full'
           >
             {title}
             <EditTask data={task} />
-          </h1>
+          </h2>
           {description && (
             <p
               className='text-sm text-medium-grey font-medium mb-6

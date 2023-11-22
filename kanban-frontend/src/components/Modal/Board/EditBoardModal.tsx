@@ -77,7 +77,7 @@ export const EditBoardModal: React.FC<{
           onSubmit={handleSubmit(onSubmit)}
           onClick={e => e.stopPropagation()}
         >
-          <h1 className='text-l text-black dark:text-white pb-6'>Edit Board</h1>
+          <h2 className='text-l text-black dark:text-white pb-6'>Edit Board</h2>
           <div>
             <label className='block text-s text-black dark:text-white pb-2'>
               Board Name

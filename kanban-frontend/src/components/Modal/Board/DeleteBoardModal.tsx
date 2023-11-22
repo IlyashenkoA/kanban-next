@@ -44,7 +44,7 @@ export const DeleteBoardModal: React.FC<IDeleteModalProps> = ({
         onClick={() => toggleModal(false)}
       >
         <article className='pt-8 px-8 pb-10 bg-white dark:bg-dark-grey w-5/6 min-w-[345px] max-w-[30rem] mx-4 rounded-lg'>
-          <h1 className='text-l text-red font-bold pb-6'>Delete this board?</h1>
+          <h2 className='text-l text-red font-bold pb-6'>Delete this board?</h2>
           <p className='text-sm text-medium-grey font-medium pb-6'>
             {`Are you sure you want to delete the ‘${deleteItem}’ board? This
               action will remove all columns and tasks and cannot be reversed.`}

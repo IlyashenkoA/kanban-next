@@ -51,9 +51,9 @@ export const DeleteTaskModal: React.FC<IDeleteModalProps> = ({
           onClick={() => toggleModal(false)}
         >
           <article className='pt-8 px-8 pb-10 bg-white dark:bg-dark-grey min-w-[345px] max-w-[30rem] mx-4 rounded-lg'>
-            <h1 className='pb-6 font-bold text-l text-red'>
+            <h2 className='pb-6 font-bold text-l text-red'>
               Delete this task?
-            </h1>
+            </h2>
             <p className='pb-6 text-sm font-medium text-medium-grey'>
               `Are you sure you want to delete the ‘{deleteItem.title}’ task and
               its subtasks? This action cannot be reversed.`

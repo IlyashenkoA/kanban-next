@@ -92,9 +92,9 @@ export const EditTaskModal: React.FC<{
           onSubmit={handleSubmit(onSubmit)}
           onClick={e => e.stopPropagation()}
         >
-          <h1 className='text-l font-bold text-black dark:text-white pb-6'>
+          <h2 className='text-l font-bold text-black dark:text-white pb-6'>
             Edit Task
-          </h1>
+          </h2>
           <div>
             <label className='block text-s font-bold text-black dark:text-white pb-2'>
               Title
@@ -244,7 +244,7 @@ export const EditTaskModal: React.FC<{
           </div>
           <PrimarySmallButton
             submit
-            label='Create Task'
+            label='Save Changes'
             onClick={(e: React.MouseEvent<HTMLButtonElement>) =>
               e.stopPropagation()
             }
